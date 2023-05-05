@@ -17,7 +17,7 @@ st.sidebar.header("📈 Data Visualisation")
 # encoding is set to "ISO-8859-1" because UTF8 encoding wasn't able to successfully analyze my dataset
 @st.cache_data
 def load_data():
-    return pd.read_csv("/Users/amir/PycharmProjects/CS230 Projects/HomeworkCS230/FinalProject/Cannabis_MA.csv",
+    return pd.read_csv("../FinalProject/Cannabis_MA.csv",
                        encoding="ISO-8859-1").set_index("ID").sort_values(by=['ID'])
 
 
@@ -144,7 +144,7 @@ def generate_map(df):
                       pickable=True)
 
     tool_tip = {'html': 'Establishment Name:<br/> <b>{business_name}</b>',
-                'style': {'backgroundColor': 'stee:green', 'color': 'white'}}
+                'style': {'backgroundColor': 'steelblue', 'color': 'white'}}
 
     map = pdk.Deck(map_style='mapbox://styles/mapbox/light-v9',
                    initial_view_state=view_state,
