@@ -17,7 +17,7 @@ st.sidebar.header("📈 Data Visualisation")
 # encoding is set to "ISO-8859-1" because UTF8 encoding wasn't able to successfully analyze my dataset
 @st.cache_data
 def load_data():
-    return pd.read_csv("../FinalProject/Cannabis_MA.csv",
+    return pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRpgZND22CxTxRyUdeRhMUgCVX8Pxph9NDb8_NE2lUKPyND4MsNYi62YNbrI1pU8g/pub?output=csv",
                        encoding="ISO-8859-1").set_index("ID").sort_values(by=['ID'])
 
 
