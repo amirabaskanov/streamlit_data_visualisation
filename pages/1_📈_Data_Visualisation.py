@@ -184,7 +184,7 @@ def generate_most_establishments_chart():
 # Main function that displays and runs all information on the Data Visualisation Page
 def main():
     st.title("# Data Visualisation with Python 📈")
-    st.write('View the data on Marijuana Establishment License and Applications - Approved in Massachusetts!')
+    st.write('View the data on Medicine Establishment License and Applications - Approved in Massachusetts!')
     st.write('Open the **:green[sidebar]** to start!')
     st.sidebar.write("Please select your options to display data")
 
@@ -205,7 +205,7 @@ def main():
         bar_chart_select = st.checkbox('View Bar Chart')
 
         if map_select:
-            st.subheader("Map of Marijuana Business Locations in Massachusetts: ")
+            st.subheader("Map of Medicine Business Locations in Massachusetts: ")
             generate_map(data)
 
         if pie_chart_select:
