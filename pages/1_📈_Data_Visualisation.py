@@ -191,7 +191,7 @@ def main():
     # Streamlit Checkboxes to choose which Data to View
     filtered_licenses = all_license_types()
     for item in filtered_licenses:
-        if "Marijuana" in item:
+        if "marijuana" in item:
             item = item.replace("Marijuana", '')
     
     license_type = st.sidebar.multiselect("Select License Type: ", filtered_licenses)
