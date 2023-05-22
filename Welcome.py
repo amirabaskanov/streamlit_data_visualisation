@@ -2,12 +2,12 @@ import streamlit as st
 
 # Multipaging involving Page title and Icon.
 st.set_page_config(
-    page_title="Welcome to my CS230 Final Project",
+    page_title="Welcome to Data Analysis with Python",
     page_icon="👋",
 )
 
 # Streamlit Text Title
-st.title("# Welcome to my CS230 Final Project! 👋")
+st.title("# Welcome to Data Analysis with Python 👋")
 
 # Sidebar Note
 st.sidebar.header("Pages")
@@ -20,10 +20,10 @@ st.markdown(
     """
     **:green[Name:]** Amir Abaskanov
     \n**:green[CS230:]** Section 3
-    \n**:green[Dataset:]** Marijuana Establishment License and Applications - Approved in Massachusetts
+    \n**:green[Dataset:]** Medical Establishment License and Applications - Approved in Massachusetts
     \n
     \n**Description:**
-    \nThis program uses data from :green[Cannabis_MA.csv] and displays establishments
+    \nThis program uses data from :green[Hospitals_MA.csv] and displays establishments
     based in Massachusetts on a **map**, filters establishments by **license type**,
     and also filters these establishments by their **maximum license payment**. 
     \nThis program shows a **Map** of the establishments, **Pie Chart** displaying 
@@ -35,11 +35,11 @@ st.header('Design:')
 st.markdown(
     """
     **:green[Three examples of queries/questions about my dataset:]**
-    1. Find all Establishments with license_type = Marijuana Retailers
+    1. Find all Establishments with license_type = Medicine Retailers
     located in Worcester, Boston, and Cambridge, with PMT_AMOUNT < 1500
     2. Find all Establishments that are located in Lowell with 
-    license_type = Marijuana Cultivators 
-    3. Find all Marijuana Product Manufacturers and Marijuana Microbusinesses, 
+    license_type = Medicine Cultivators 
+    3. Find all Medicine Product Manufacturers and Medicine Microbusinesses, 
     that are located in Holyoke, with PMT_AMOUNT less than 1200
     """
 )
