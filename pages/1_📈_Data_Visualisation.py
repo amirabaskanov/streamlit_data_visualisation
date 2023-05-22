@@ -189,7 +189,14 @@ def main():
     st.sidebar.write("Please select your options to display data")
 
     # Streamlit Checkboxes to choose which Data to View
-    license_type = st.sidebar.multiselect("Select License Type: ", all_license_types())
+    filtered_licenses = all_license_types()
+    for item in filtered_licenses:
+        if "Marijuana" in item:
+            item = item.replace("Marijuana", '')
+    
+    license_type = st.sidebar.multiselect("Select License Type: ", filtered_licenses)
+    
+    
     cities = st.sidebar.multiselect("Select a City: ", all_cities())
     max_payment = st.sidebar.slider("Maximum License Payment: ", 0, 2000, 1000)
 
