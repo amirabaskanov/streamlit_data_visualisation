@@ -192,7 +192,7 @@ def main():
     filtered_licenses = all_license_types()
     for item in filtered_licenses:
         if "marijuana" in item:
-            item = item.replace("Marijuana", '')
+            item = item.replace("marijuana", '')
     
     license_type = st.sidebar.multiselect("Select License Type: ", filtered_licenses)
     
