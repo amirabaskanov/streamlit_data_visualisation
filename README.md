@@ -1,2 +1,2 @@
 # streamlit_data_visualisation
-CS 230 Python Final Project on Streamlit. Data Visualisation of Regulated Cannabis Facilities in Massachusetts using Pandas and Streamlit
+Data Visualisation Project of Regulated Cannabis Facilities in Massachusetts using Pandas and Streamlit. The project raises awareness on the topic by using interactive graphics, maps, and calculation views.
